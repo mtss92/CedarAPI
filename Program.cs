@@ -38,9 +38,6 @@ app.MapPost("/evaluate", async ([FromBody] EvaluateRequest request) =>
     var output = await process.StandardOutput.ReadToEndAsync();
     await process.WaitForExitAsync();
 
-    if (process.ExitCode != 0)
-        return Results.BadRequest(new { output });
-
     return Results.Content(output, "application/json");
 
 });
