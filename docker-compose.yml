@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  cedar-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cedar-api
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development

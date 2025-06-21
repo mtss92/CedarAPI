@@ -1,0 +1,13 @@
+/bin/
+/obj/
+/out/
+/app/publish/
+
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+.vscode/
+.vs/

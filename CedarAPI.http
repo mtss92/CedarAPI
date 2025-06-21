@@ -1,0 +1,11 @@
+@CedarAPI_HostAddress = http://localhost:8080
+
+POST {{CedarAPI_HostAddress}}/evaluate
+Content-Type: application/json
+Accept: application/json
+
+{
+  "principal": "alice",
+  "action": "read",
+  "resource": "doc123"
+}
