@@ -20,7 +20,7 @@ app.MapPost("/evaluate", async ([FromBody] EvaluateRequest request) =>
     psi.ArgumentList.AddArgument("--entities", "configs/entities.json");
     psi.ArgumentList.AddArgument("--principal", $"User::\"{request.principal}\"");
     psi.ArgumentList.AddArgument("--action", $"Action::\"{request.action}\"");
-    psi.ArgumentList.AddArgument("--resource", $"Document::\"{request.resource}\"");
+    psi.ArgumentList.AddArgument("--resource", $"Resource::\"{request.resource}\"");
 
     Process process = null!;
     try

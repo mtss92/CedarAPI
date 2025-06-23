@@ -7,5 +7,5 @@ Accept: application/json
 {
   "principal": "alice",
   "action": "read",
-  "resource": "doc123"
+  "resource": "config-tenant"
 }

@@ -1,16 +1,77 @@
 [
   {
     "uid": {
-      "type": "User",
-      "id": "alice"
+      "type": "Group",
+      "id": "global-admin"
     },
     "attrs": {},
     "parents": []
   },
   {
     "uid": {
-      "type": "Document",
-      "id": "doc123"
+      "type": "Group",
+      "id": "tenant-admin"
+    },
+    "attrs": {},
+    "parents": []
+  },
+
+  {
+    "uid": {
+      "type": "User",
+      "id": "alice"
+    },
+    "attrs": {},
+    "parents": [
+      {
+        "type": "Group",
+        "id": "global-admin"
+      }
+    ]
+  },
+  {
+    "uid": {
+      "type": "User",
+      "id": "sam"
+    },
+    "attrs": {},
+    "parents": [
+      {
+        "type": "Group",
+        "id": "tenant-admin"
+      }
+    ]
+  },
+
+  {
+    "uid": {
+      "type": "Resource",
+      "id": "config-tenant"
+    },
+    "attrs": {},
+    "parents": []
+  },
+  {
+    "uid": {
+      "type": "Resource",
+      "id": "app"
+    },
+    "attrs": {},
+    "parents": []
+  },
+  {
+    "uid": {
+      "type": "Resource",
+      "id": "run"
+    },
+    "attrs": {},
+    "parents": []
+  },
+
+  {
+    "uid": {
+      "type": "Action",
+      "id": "read"
     },
     "attrs": {},
     "parents": []
@@ -18,7 +79,15 @@
   {
     "uid": {
       "type": "Action",
-      "id": "read"
+      "id": "create"
+    },
+    "attrs": {},
+    "parents": []
+  },
+  {
+    "uid": {
+      "type": "Action",
+      "id": "execute"
     },
     "attrs": {},
     "parents": []
